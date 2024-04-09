@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./index.js"></script>
+    <title>Contact Me</title>
+  </head>
+  <body>
+    <aside class="sidebar">
+      <header id="sidebar-header">
+        <p>Sam Lee</p>
+        <i class="logo-icon bx bx-code-alt"></i>
+      </header>
+
+      <nav id="navigation">
+        <a href="./index.html">
+          <span>
+            <i class="bx bx-home"></i>
+            <span>Home</span>
+          </span>
+        </a>
+
+        <a href="./skill.html">
+          <span>
+            <i class="bx bx-joystick"></i>
+            <span>Skill</span>
+          </span>
+        </a>
+
+        <a href="./contact.html">
+          <span>
+            <i class="bx bx-envelope"></i>
+            <span>Contact</span>
+          </span>
+        </a>
+      </nav>
+    </aside>
+    <div id="contact-container">
+      <header id="contact-header">
+        <h2>Contact Me</h2>
+        <h3>(Enter your information)</h3>
+      </header>
+      <div class="contact-card">
+        <form id="contact-form" action="index.html">
+          <div>
+            <div>
+              <label for="username">Username</label>
+              <p class="error" id="username_error">(Required)</p>
+            </div>
+            <input type="text" name="username" id="username" />
+          </div>
+          <div>
+            <div>
+              <label for="phoneNumber">Phone Number</label>
+              <p class="error" id="phoneNumber_error">(Required)</p>
+            </div>
+            <input type="number" name="phoneNumber" id="phoneNumber" />
+          </div>
+          <div>
+            <div>
+              <label for="email">Email</label>
+              <p class="error" id="email_error">(Required)</p>
+            </div>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div>
+            <label for="comment">Comment</label>
+            <textarea name="comment" id="comment" rows="3"></textarea>
+          </div>
+          <div class="buttons">
+            <button id="reset" type="reset">Clear</button>
+            <button id="submit" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer id="contact-footer">
+      <div class="footer-container">
+        <div class="footer-top">
+          <div>
+            <a href="./index.html"><span>Home</span></a>
+          </div>
+          <div>
+            <a href="./skill.html"><span>Skill</span></a>
+          </div>
+          <div>
+            <a href="./contact.html"><span>Contact</span></a>
+          </div>
+        </div>
+        <hr class="footer-divider" />
+        <div class="footer-bottom">
+          <span class="copyright">
+            &copy; 2024 Sam Lee. All rights reserved.
+          </span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
